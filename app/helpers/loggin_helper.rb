@@ -1,0 +1,2 @@
+module LogginHelper
+end
