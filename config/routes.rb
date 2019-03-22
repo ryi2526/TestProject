@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   resources :diaries
+  get '/login', to: 'sessions#login'
+  get '/ok', to: 'session#ok'
+  post '/login', to: 'sessions#ok'
   # For details on the DSL available within this file,see http://guides.rubyonrails.org/routing.html
 
   # 　リンク　　to:  コントローラー#アクション
